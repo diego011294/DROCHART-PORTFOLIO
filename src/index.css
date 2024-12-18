@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes pulseAura {
+    0% {
+      transform: scale(1);
+      opacity: 0.2;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.4;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.2;
+    }
+  }
+  
+  .aura {
+    animation: pulseAura 1.5s infinite;
+  }
+
+  .fondo-header {
+    background-image: url("/img/fondoHeader.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .fondo-basic {
+    background-image: url("/img/fondobasic.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #F0B040 !important;
+}
+
+.swiper-pagination-bullet{
+  position: relative;
+  top: 40px;
+}
+
+.background-video {
+  object-fit: cover;
+  filter: blur(40px); 
+  z-index: -1; 
+}
+
+.animated-image {
+  animation: resizeAnimation 4s infinite linear;
+}
+
+/* Definir la animación */
+@keyframes resizeAnimation {
+  0% {
+    transform: scale(1) rotate(0deg) skew(0deg, 0deg); /* Estado inicial */
+  }
+  25% {
+    transform: scale(1.05) rotate(0deg) skew(0deg, 0deg); /* Un poco más grande, rotada y sesgada */
+  }
+  50% {
+    transform: scale(1) rotate(-3deg) skew(-3deg, 3deg); /* Más grande, más rotación y sesgo */
+  }
+  75% {
+    transform: scale(0.9) rotate(5deg) skew(2deg, -2deg); /* Más pequeño, rotación y sesgo opuestos */
+  }
+  100% {
+    transform: scale(1) rotate(0deg) skew(0deg, 0deg); /* Vuelve al estado inicial */
+  }
+}
+
+.fondo{
+  background-image: url("/img/fondoilus.jpg");
+  background-size: fill;
+  background-position: center;
+}
+
+@media (min-width: 1800px) {
+  .container-furgo {
+    left: 280px !important;
+  }
+
+  .furgo {
+    width: 1000px !important;
+  }
+}
+
+.mySwiper {
+  padding: 20px 0;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  background-color: #F0B040;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  color: white;
+  box-shadow: 0 5px 10px #33333387;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after{
+  font-size: 20px;
+}
+
+.mockshadow{
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
+}
