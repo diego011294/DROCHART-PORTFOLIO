@@ -3,8 +3,8 @@ export const Dobleuve = () => {
     return (
         <div className="flex flex-col items-center justify-center w-full">
             <div className="flex  justify-center items-center max-w-7xl">
-                <div className="z-10">
-                    <video className="w-full" autoPlay muted loop>
+                <div className="z-10 h-[360px] md:h-full">
+                    <video loading="lazy" className="object-cover w-full h-full" autoPlay muted loop>
                         <source src="/img/dobleuve2.mp4" type="video/mp4" />
                         Tu navegador no soporta el formato de video.
                     </video>

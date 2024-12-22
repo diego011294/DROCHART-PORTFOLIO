@@ -17,7 +17,7 @@ export const Header = () => {
                     <div className="flex flex-col justify-center md:p-10 md:mr-10">
                         <div className="text-center md:text-start mt-5 lg:mt-0 lg:mb-0 p-2 lg:p-0 mb-5 order-2 lg:order-1 border-t-2 lg:border-t-0 lg:border-b-2 border-tipo border-opacity-20 lg:flex justify-end font-semibold italic text-tipo opacity-60 font-raleway text-sm gap-24">
                             <p className="lg:w-96 lg:mb-5">
-                                “Mi objetivo es crear diseños simples con un alto impacto visual, priorizando siempre la mejor experiencia de usabilidad.
+                                “Mi objetivo es crear diseños simples y de alto impacto visual, con un enfoque constante en ofrecer la mejor experiencia de usabilidad.
                             </p>
                             <p className="lg:w-96">
                             Garantizar una navegación fluida y limpia es una prioridad. Cada decisión está pensada para ofrecer soluciones sólidas, adaptadas a las necesidades de los usuarios.”

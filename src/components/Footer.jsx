@@ -76,8 +76,8 @@ export const Footer = () => {
                             </motion.div>
                         </div>
                     </div>
-                    <div className="flex flex-col md:flex-row justify-center items-center gap-16">
-                        <div className='space-y-3'>
+                    <div className="flex flex-col md:flex-row justify-center items-center gap-16 w-full">
+                        <div className='space-y-3 w-full'>
                             <h2 className="font-black italic">CORREO</h2>
                             <p>drochart.info@gmail.com</p>
                             <div className="flex items-center gap-2">
@@ -85,9 +85,9 @@ export const Footer = () => {
                                 <p className="opacity-60">Galicia | España</p>
                             </div>
                         </div>
-                        <div className='space-y-3'>
+                        <div className='space-y-3 w-full'>
                             <h2 className="font-black italic">NAVEGACIÓN</h2>
-                            <div className="flex items-center gap-5">
+                            <div className="flex items-center justify-between gap-5 w-full">
                                 <div className='flex flex-col items-start'>
                                     <button onClick={() => handleScrollToSection("inicio")}>Inicio</button>
                                     <button onClick={() => handleScrollToSection("proyectos")}>Proyectos</button>
