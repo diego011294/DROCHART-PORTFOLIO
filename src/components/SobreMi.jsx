@@ -56,7 +56,7 @@ export const SobreMi = () => {
                         <source src="/img/videofondo.mp4" type="video/mp4" />
                         Tu navegador no soporta el formato de video.
                     </video>
-                    <img src="/img/diego2.png" alt="sobre mi" className="w-[375px] xl:w-[500px] animated-image" />
+                    <img src="/img/diego2.webp" alt="sobre mi" className="w-[375px] xl:w-[500px] animated-image" />
                 </div>
 
             </div>

@@ -1,17 +1,19 @@
+import { motion } from "framer-motion"
+
 
 export const Header = () => {
     return (
         <div className="flex justify-center items-center md:p-10">
             <div className="max-w-7xl w-full h-auto lg:h-[580px] fondo-header md:p-0 relative">
                 <div className="absolute h-[660px] overflow-hidden -top-20 z-20 pointer-events-none hidden xl:block">
-                    <img
-                        className="w-10/12 relative object-covered img-responsive left-[-190px]"
-                        src="/img/diego1.png"
-                        alt="Diego inicio"
-                    />
+                        <img
+                            className="w-10/12 relative object-cover img-responsive left-[-190px]"
+                            src="/img/diego1.webp"
+                            alt="Diego inicio"
+                        />
                 </div>
                 <div className="absolute w-full top-[20%] md:top-40 lg:top-1/2 xl:top-1/2 z-10 ">
-                    <img src="/img/roto.png" alt="roto" className="pointer-events-none"/>
+                    <img src="/img/roto.png" alt="roto" className="pointer-events-none" />
                 </div>
                 <div className="relative flex items-center md:flex justify-center xl:justify-end  p-10 md:p-0">
                     <div className="flex flex-col justify-center md:p-10 md:mr-10">
@@ -20,7 +22,7 @@ export const Header = () => {
                                 “Mi objetivo es crear diseños simples y de alto impacto visual, con un enfoque constante en ofrecer la mejor experiencia de usabilidad.
                             </p>
                             <p className="lg:w-96">
-                            Garantizar una navegación fluida y limpia es una prioridad. Cada decisión está pensada para ofrecer soluciones sólidas, adaptadas a las necesidades de los usuarios.”
+                                Garantizar una navegación fluida y limpia es una prioridad. Cada decisión está pensada para ofrecer soluciones sólidas, adaptadas a las necesidades de los usuarios.”
                             </p>
                         </div>
                         <div className="font-raleway font-black text-tipo mt-0 md:mt-4 w-auto order-1 lg:order-2 flex flex-col items-center justify-center">

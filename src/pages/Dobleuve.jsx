@@ -1,10 +1,29 @@
+import { useState } from "react";
 
 export const Dobleuve = () => {
+    const [isLoading, setIsLoading] = useState(false);
+
+    const handleVideoLoaded = () => {
+        setIsLoading(false);
+    };
+
     return (
         <div className="flex flex-col items-center justify-center w-full">
             <div className="flex  justify-center items-center max-w-7xl">
                 <div className="z-10 h-[360px] md:h-full">
-                    <video loading="lazy" className="object-cover w-full h-full" autoPlay muted loop>
+                    {isLoading && (
+                        <div className="flex justify-center items-center pt-10 z-50">
+                            <div className="animate-spin rounded-full h-12 w-12 border-b-4 border-primario"></div>
+                        </div>
+                    )}
+                    <video
+                        loading="lazy"
+                        className="object-cover w-full h-full"
+                        autoPlay
+                        muted
+                        loop
+                        onLoadedData={handleVideoLoaded} // Activar cuando el video esté cargado
+                    >
                         <source src="/img/dobleuve2.mp4" type="video/mp4" />
                         Tu navegador no soporta el formato de video.
                     </video>

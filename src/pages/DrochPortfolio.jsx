@@ -4,7 +4,7 @@ export const DrochPortfolio = () => {
         <div className="flex flex-col items-center justify-center w-full">
             <div className="flex  justify-center items-center max-w-7xl">
                 <div className="z-10 h-[360px] md:h-full">
-                    <img src="/img/cabeceraportfolio.jpg" alt="drochart" className="object-cover w-full h-full order-1" />
+                    <img src="/img/cabeceraportfolio.webp" alt="drochart" className="object-cover w-full h-full order-1" />
                 </div>
             </div>
             <div className="text-tipo font-raleway flex justify-center items-center pt-64 lg:pb-20 lg:pt-80 bg-fondo w-full relative bottom-52">
