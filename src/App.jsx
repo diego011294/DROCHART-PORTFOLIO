@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { Navbar } from './components/Navbar'
 import { Footer } from './components/Footer'
@@ -14,6 +14,7 @@ import { DrochPortfolio } from './pages/DrochPortfolio'
 
 function App() {
   const [loadingComplete, setLoadingComplete] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     // Revisa si ya se mostró el LoadingScreen previamente
@@ -29,6 +30,14 @@ function App() {
       }, 2000); // Simula una duración de 3 segundos en la pantalla de carga
     }
   }, []);
+
+  useEffect(() => {
+    if (window.gtag) {
+      window.gtag('event', 'page_view', {
+        page_path: location.pathname + location.search,
+      });
+    }
+  }, [location]);
 
   if (!loadingComplete) {
     return <LoadingScreen />;
