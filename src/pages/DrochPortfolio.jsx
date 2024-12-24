@@ -1,23 +1,10 @@
-import { useState } from "react";
 
 export const DrochPortfolio = () => {
-    const [isLoading, setIsLoading] = useState(true);
-    
-        const handleVideoLoaded = () => {
-            setIsLoading(false);
-        };
-
     return (
         <div className="flex flex-col items-center justify-center w-full">
             <div className="flex  justify-center items-center max-w-7xl">
-            {isLoading && (
-                        <div className="flex justify-center items-center pt-10 z-50">
-                            <div className="animate-spin rounded-full h-12 w-12 border-b-4 border-primario"></div>
-                        </div>
-                    )}
                 <div className="z-10 h-[360px] md:h-full">
-                    <img src="/img/cabeceraportfolio.webp" alt="drochart" className="object-cover w-full h-full order-1" 
-                    onLoadedData={handleVideoLoaded}/>
+                    <img src="/img/cabeceraportfolio.webp" alt="drochart" className="object-cover w-full h-full order-1" />
                 </div>
             </div>
             <div className="text-tipo font-raleway flex justify-center items-center pt-64 lg:pb-20 lg:pt-80 bg-fondo w-full relative bottom-52">
