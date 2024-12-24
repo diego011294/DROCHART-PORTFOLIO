@@ -26,7 +26,7 @@ function App() {
       setTimeout(() => {
         setLoadingComplete(true);
         localStorage.setItem('hasSeenLoading', 'true'); // Guarda el estado en localStorage
-      }, 3000); // Simula una duración de 3 segundos en la pantalla de carga
+      }, 2000); // Simula una duración de 3 segundos en la pantalla de carga
     }
   }, []);
 
