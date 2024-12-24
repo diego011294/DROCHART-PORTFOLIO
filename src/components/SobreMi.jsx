@@ -37,7 +37,8 @@ export const SobreMi = () => {
                         </div>
                         <div className="mt-5 bg-gray-100 p-5 mb-5">
                             <img src="/img/logopululart.png" alt="logo pulular team" />
-                            <h3 className="italic font-semibold mb-4">Diseñador de interfaz de usuario web | UI/UX Designer</h3>
+                            <h3 className="italic font-semibold mb-4">Desarrollo de diseño web | UI/UX designer
+                            </h3>
                             <div className="font-light text-sm">
                                 <p>Jornada completa</p>
                                 <p>jul. 2024 - actualidad</p>
