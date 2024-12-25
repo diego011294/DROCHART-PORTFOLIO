@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 export const LoadingScreen = ({ setLoadingComplete }) => {
 
@@ -30,7 +30,6 @@ export const LoadingScreen = ({ setLoadingComplete }) => {
 
                 </motion.div>
                 <motion.h1
-                    className="text-xl font-black"
                     initial={{ x: -50, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{
@@ -39,7 +38,7 @@ export const LoadingScreen = ({ setLoadingComplete }) => {
                         ease: "easeOut",
                     }}
                 >
-                    <span className="opacity-20 font-black">|</span> PORTFOLIO
+                    <h1 className="text-xl font-black font-raleway"><span className="opacity-20 font-black">|</span> PORTFOLIO</h1>
                 </motion.h1>
             </motion.div>
         </div>
