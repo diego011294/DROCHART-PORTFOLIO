@@ -102,7 +102,7 @@ export const ListaProyectos = () => {
                                     "/img/portfolio3.jpg",
                                     "/img/portfolio2.jpg",
                                 ]}
-                                title="DROCH.ART GALERÍA"
+                                title="DROCH.ART PORTFOLIO"
                                 subtitle="Diseño UI/UX | Desarrollo web"
                                 icons={["uil:react", "lineicons:framer", "mdi:tailwind"]}
                             />
