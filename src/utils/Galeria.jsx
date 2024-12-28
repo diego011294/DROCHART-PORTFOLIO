@@ -8,10 +8,10 @@ export const Galeria = () => {
   const images = [
     "/img/galeria6.webp",
     "/img/galeria4.webp",
+    "/img/galeria1.webp",
     "/img/galeria2.webp",
     "/img/galeria3.webp",
     "/img/galeria5.webp",
-    "/img/galeria1.webp",
   ];
 
   return (
