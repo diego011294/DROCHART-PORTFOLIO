@@ -41,10 +41,6 @@ export const Ilustracion = () => {
                             distinción y una conexión auténtica con el público. Cada proyecto es una oportunidad
                             de transformar ideas en imágenes memorables que fortalecen la identidad de una marca.
                         </p>
-                        <div className="flex items-center gap-4 mt-10">
-                            <a target="_blank" href="https://drochart.vercel.app/"><OutlineButton>Ir a la galería</OutlineButton></a>
-                            <p className="text-sm opacity-40">*En construcción</p>
-                        </div>
                     </div>
                 </div>
                 <Galeria/>
