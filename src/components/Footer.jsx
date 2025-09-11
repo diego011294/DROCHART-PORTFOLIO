@@ -38,7 +38,7 @@ export const Footer = () => {
 
     const handleScroll = () => {
         const footer = document.getElementById("footer");
-        const patoImg = document.querySelector("img[src='/img/patofoo.png']");
+        const patoImg = document.querySelector("img[src='/img/pato-gorro-perfil.png']");
         const patoPosition = patoImg?.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
 
@@ -56,14 +56,14 @@ export const Footer = () => {
 
     return (
         <div id="footer" className="flex justify-center items-center md:pt-10">
-            <div className=" p-3 w-full md:max-w-4xl lg:max-w-6xl xl:max-w-7xl bg-primario text-raleway text-tipo flex flex-col lg:flex-row justify-between items-center">
+            <div className="gap-10 p-5 w-full md:max-w-4xl lg:max-w-6xl xl:max-w-7xl bg-primario text-raleway text-tipo flex flex-col lg:flex-row justify-between items-center">
                 <div className="w-44 md:w-56 xl:w-72 pt-10">
                     <img src="/img/logofoo.svg" alt="logofoo" className="w-full" />
                 </div>
-                <div className="flex flex-col justify-center items-center lg:p-5 h-full relative">
+                <div className="w-full flex flex-col justify-center items-center lg:p-5 h-full relative">
                     {/* Imagen del pato */}
                     <div className="w-full flex justify-center items-center">
-                        <img src="/img/patofoo.png" alt="patofoo" className="w-60 z-10" />
+                        <img src="/img/pato-gorro-perfil.png" alt="patofoo" className="w-44" />
                         {/* Bocadillo animado */}
                         <div className="absolute top-0 lg:top-10 left-1/2 transform -translate-x-1/2  flex flex-col items-center w-full">
                             <motion.div
@@ -100,7 +100,7 @@ export const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full lg:w-96">
+                <div className="w-full lg:w-[800px]">
                     <ContactForm />
                 </div>
             </div>

@@ -45,9 +45,9 @@ export const ContactForm = () => {
 
 
   return (
-    <div>
-      <div className='font-raleway text-tipo'>
-        <form ref={form} onSubmit={sendEmail} className="space-y-5 p-10">
+    <div className='w-full'>
+      <div className='w-full font-raleway text-tipo'>
+        <form ref={form} onSubmit={sendEmail} className="space-y-5 w-full pt-10 pb-10">
           <div>
             <input
               type="text"

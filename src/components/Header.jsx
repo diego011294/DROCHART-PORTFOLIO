@@ -51,8 +51,8 @@ export const Header = () => {
           variants={childVariants}
         >
           <img
-            className="w-10/12 relative object-cover img-responsive left-[-190px]"
-            src="/img/diego1.webp"
+            className="w-9/12 relative object-cover img-responsive left-[-120px]"
+            src="/img/pato-gorro.png"
             alt="Diego inicio"
           />
         </motion.div>

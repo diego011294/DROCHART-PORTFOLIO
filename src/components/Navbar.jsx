@@ -128,7 +128,7 @@ export const Navbar = () => {
                     transition={{ duration: 1, ease: "easeOut" }}
                     className="flex justify-center"
                 >
-                    <img src="/img/pato1.png" alt="pato" className="w-56" />
+                    <img src="/img/pato-gorro.png" alt="pato" className="w-56" />
                 </motion.div>
             </motion.div>
         </div>
